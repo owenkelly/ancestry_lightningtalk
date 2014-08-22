@@ -1,0 +1,3 @@
+
+<%= nested_posts @post.descendants.arrange(order: :created_at) %>
+<%= link_to 'Back to Index', root_path %>

@@ -1,0 +1,7 @@
+<div class = "post">
+  	<div class = "title" ><%= link_to post.title, post %></div>
+    <div class = "created_at" ><%= post.created_at.strftime("%B %d, %Y") %></div>   
+    <div class = "content" ><%= post.body %></div>
+    <div class = "new_topic" ><%= link_to "EXPRESS YOUR OUTRAGE!!!", new_post_path(parent_id: post) %></div>
+    <br>
+</div>
